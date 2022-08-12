@@ -189,16 +189,29 @@ class SinglyLinkedList{
         }
         return this;
     }
+
+    // rotate function - extra practice
+    // O(N) space complexity
+    // accepts position and returns the new list head as the next item in the sll and tail and the item.
+    rotate(position){
+        if (position > this.length) return this;
+        if (position < 0) position = this.length+position;
+        let count = 0;
+        let current = this.head;
+        while(count !== position-1){
+            current = current.next;
+            count++;
+        }
+        this.tail.next = this.head;
+        let newHead = current.next;
+        current.next = null;
+        this.tail = current;
+        this.head = newHead;
+    }
 }
 
 let list = new SinglyLinkedList()
-list.push("Hello")
-list.push("Hey")
-list.push(99)
+list.push(5).push(10).push(15).push(20).push(25);
 console.log(list)
-console.log(list.get(0))
-console.log(list.set(0, 'ahlie'))
-console.log(list.insert(0,"ahe"))
-console.log(list.insert(1,"witda"))
+list.rotate(3);
 console.log(list)
-console.log(list.get(0));
