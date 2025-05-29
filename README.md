@@ -1,6 +1,6 @@
 # 📚 Data Structures and Algorithms
 
-A curated collection of common data structures and algorithms implemented in Python. This repository serves as a reference and practice resource for mastering DSA fundamentals — great for interview prep, computer science revision, and building coding confidence.
+A curated collection of common data structures and algorithms implemented using Python. This repository serves as a reference and practice resource for mastering DSA fundamentals — great for interview prep, computer science revision, and building coding confidence.
 
 ## 🚀 What's Inside
 
